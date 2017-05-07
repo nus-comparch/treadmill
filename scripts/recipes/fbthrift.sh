@@ -6,6 +6,8 @@ source common.sh
 
 cd "$PKG_DIR/fbthrift/thrift" || die "cd fbthrift failed"
 
+git checkout 9e68fd1ee2809adfa2cd6b3817c4ad4fee10981a
+
 autoreconf --install
 LD_LIBRARY_PATH="$INSTALL_DIR/lib:$LD_LIBRARY_PATH" \
   LD_RUN_PATH="$INSTALL_DIR/lib:$LD_RUN_PATH" \

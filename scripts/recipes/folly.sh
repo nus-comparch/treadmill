@@ -5,6 +5,7 @@ source common.sh
 if [[ ! -d folly ]]; then
   git clone https://github.com/facebook/folly
   cd "$PKG_DIR/folly" || die "cd fail"
+  git checkout cd058f18c0331da9d2a20e5cc4c7d256af490508
 fi
 
 if [ ! -d /usr/include/double-conversion ]; then

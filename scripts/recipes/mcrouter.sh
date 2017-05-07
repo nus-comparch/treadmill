@@ -9,6 +9,8 @@ source common.sh
 
 cd "mcrouter/mcrouter/" || die "cd fail"
 
+git checkout d1235676cb1141f0096e1d62f5bb3e78cbef6a44
+
 sed -i "s/noinst_LIBRARIES/lib_LTLIBRARIES/g" lib/Makefile.am
 sed -i "s/libmcrouter_a/libmcrouter_la/g" lib/Makefile.am
 find . -name "Makefile.am" -exec \
