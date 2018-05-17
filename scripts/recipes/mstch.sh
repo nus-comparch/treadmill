@@ -6,6 +6,8 @@ source common.sh
 
 cd "mstch/" || "cd fail"
 
+git checkout 0fde1cf94c26ede7fa267f4b64c0efe5da81a77a
+
 LD_LIBRARY_PATH="$INSTALL_DIR/lib:$LD_LIBRARY_PATH" \
   LD_RUN_PATH="$INSTALL_DIR/lib:$LD_RUN_PATH" \
   LDFLAGS="-L$INSTALL_DIR/lib $LDFLAGS" \

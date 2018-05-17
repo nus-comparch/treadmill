@@ -12,10 +12,13 @@ sudo apt-get install -y \
   automake \
   binutils-dev \
   bison \
-  cmake \
+  cmake3 \
+  dpkg \
   flex \
   g++ \
   gcc \
+  g++-5 \
+  gcc-5 \
   git \
   libboost-all-dev \
   libdouble-conversion-dev \
@@ -32,6 +35,7 @@ sudo apt-get install -y \
   libssl-dev \
   libtool \
   make \
+  pkg-config \
   python-dev \
   ragel \
   scons \
